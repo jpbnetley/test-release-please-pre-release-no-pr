@@ -1,6 +1,6 @@
-# test-release-please-no-pr
+# test-release-please-pre-release-no-pr-
 
-This repository is a sample project for testing release workflows without creating pull requests.
+This repository demonstrates testing pre-release workflows that do not involve creating pull requests.
 
 ## Features
 
