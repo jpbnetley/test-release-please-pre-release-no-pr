@@ -22,7 +22,7 @@ runs:
       uses: googleapis/release-please-action@v4
       with:
         token: ${{ inputs.GITHUB_TOKEN }}
-        release-type: simple
+        config-file: .release-please-config.json
         
     - name: Set PR output
       id: set-pr
