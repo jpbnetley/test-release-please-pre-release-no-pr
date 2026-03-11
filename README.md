@@ -1,4 +1,7 @@
-# test-release-please-pre-release-no-pr-
+> [!WARNING]
+> Still a work in progress
+
+# test-release-please-pre-release-no-pr
 
 This repository demonstrates testing pre-release workflows that do not involve creating pull requests.
 
