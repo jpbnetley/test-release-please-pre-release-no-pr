@@ -33,7 +33,6 @@ runs:
         if [[ "${{ inputs.target-branch }}" == "dev" ]]; then
           echo "config-file=dev-release-please-config.json" >> "$GITHUB_OUTPUT"
           echo "manifest-file=dev-release-please-manifest.json" >> "$GITHUB_OUTPUT"
-          echo "Environment: ${inputs.target-branch}"
         else
           echo "config-file=release-please-config.json" >> "$GITHUB_OUTPUT"
           echo "manifest-file=.release-please-manifest.json" >> "$GITHUB_OUTPUT"
