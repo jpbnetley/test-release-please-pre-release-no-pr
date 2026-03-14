@@ -1,0 +1,12 @@
+{
+  "release-type": "simple",
+  "prerelease": true,
+  "versioning": "prerelease",
+  "packages": {
+    ".": {
+      "release-type": "simple",
+      "prerelease-type": "dev",
+      "prerelease": true
+    }
+  }
+}
