@@ -21,7 +21,7 @@ jobs:
         uses: ./.github/actions/release-please
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          target-branch: ${{ github.ref_name }}
+          target-branch: main
 
       - name: Auto-merge release PR
         id: auto-merge
@@ -45,4 +45,4 @@ jobs:
         uses: ./.github/actions/release-please
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          target-branch: ${{ github.ref_name }}
+          target-branch: main
