@@ -22,14 +22,28 @@ outputs:
 runs:
   using: "composite"
   steps:
+    - name: get release-please config
+      id: get-config
+      run: |
+        echo "Environment: ${inputs.target-branch}"
+        
+        if [[ "${{ inputs.target-branch }}" == "dev" ]]; then
+          echo "config-file=dev-release-please-config.json" >> "$GITHUB_OUTPUT"
+          echo "manifest-file=dev-release-please-manifest.json" >> "$GITHUB_OUTPUT"
+          echo "Environment: ${inputs.target-branch}"
+        else
+          echo "config-file=release-please-config.json" >> "$GITHUB_OUTPUT"
+          echo "manifest-file=.release-please-manifest.json" >> "$GITHUB_OUTPUT"
+        fi
+      shell: bash
     - name: Release please
       id: release-please
       uses: googleapis/release-please-action@v4
       with:
         token: ${{ inputs.GITHUB_TOKEN }}
         target-branch: ${{ inputs.target-branch }}
-        config-file: release-please-config.json
-        manifest-file: .release-please-manifest.json
+        config-file: ${{ steps.get-config.outputs.config-file }}
+        manifest-file: ${{ steps.get-config.outputs.manifest-file }}
         
     - name: Set PR output
       id: set-pr
