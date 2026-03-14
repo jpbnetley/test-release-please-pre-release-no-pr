@@ -5,7 +5,7 @@
   "versioning": "prerelease",
   "packages": {
     ".": {
-      "release-type": "generic",
+      "release-type": "simple",
       "prerelease-type": "dev",
       "prerelease": true
     }
