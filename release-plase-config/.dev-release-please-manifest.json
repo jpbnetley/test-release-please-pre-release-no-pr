@@ -1,6 +1,8 @@
 {
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/refs/heads/main/schemas/manifest.json",
   ".": "0.0.0",
-  "prerelease": true,
+  "release-type": "simple",
+  "prerelease": "dev",
   "versioning": "prerelease",
   "prerelease-type": "dev"
 }
