@@ -31,11 +31,11 @@ runs:
       id: get-config
       run: |
         if [[ "${{ inputs.target-branch }}" == "dev" ]]; then
-          echo "config-file=dev-release-please-config.json" >> "$GITHUB_OUTPUT"
-          echo "manifest-file=.dev-release-please-manifest.json" >> "$GITHUB_OUTPUT"
+          echo "config-file=release-plase-config/dev-release-please-config.json" >> "$GITHUB_OUTPUT"
+          echo "manifest-file=release-plase-config/.dev-release-please-manifest.json" >> "$GITHUB_OUTPUT"
         else
-          echo "config-file=release-please-config.json" >> "$GITHUB_OUTPUT"
-          echo "manifest-file=.release-please-manifest.json" >> "$GITHUB_OUTPUT"
+          echo "config-file=release-plase-config/release-please-config.json" >> "$GITHUB_OUTPUT"
+          echo "manifest-file=release-plase-config/.release-please-manifest.json" >> "$GITHUB_OUTPUT"
         fi
       shell: bash
     - name: Release please
