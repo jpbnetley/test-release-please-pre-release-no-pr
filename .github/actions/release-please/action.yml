@@ -25,8 +25,8 @@ runs:
     - name: get release-please config
       id: get-config
       run: |
-        echo "Environment: ${inputs.target-branch}"
-        
+        echo "Environment: ${{inputs.target-branch}}"
+
         if [[ "${{ inputs.target-branch }}" == "dev" ]]; then
           echo "config-file=dev-release-please-config.json" >> "$GITHUB_OUTPUT"
           echo "manifest-file=dev-release-please-manifest.json" >> "$GITHUB_OUTPUT"
