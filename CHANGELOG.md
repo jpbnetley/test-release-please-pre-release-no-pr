@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/compare/v1.0.0...v1.0.1) (2026-03-14)
+
+
+### Bug Fixes
+
+* add pre-release prop ([#14](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/issues/14)) ([18782da](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/commit/18782da2d54a4e892140c88986910fb07b0aa849))
+
 ## 1.0.0 (2026-03-14)
 
 
