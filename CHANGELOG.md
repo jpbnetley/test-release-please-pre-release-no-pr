@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/compare/v1.0.1...v1.0.2) (2026-03-14)
+
+
+### Bug Fixes
+
+* add pre-release type beta ([#16](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/issues/16)) ([e8f3263](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/commit/e8f32637957885222d55382caee4e4f748463d10))
+
 ## [1.0.1](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/compare/v1.0.0...v1.0.1) (2026-03-14)
 
 
