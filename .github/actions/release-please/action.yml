@@ -27,7 +27,6 @@ runs:
       uses: googleapis/release-please-action@v4
       with:
         token: ${{ inputs.GITHUB_TOKEN }}
-        config-file: .release-please-config.json
         target-branch: ${{ inputs.target-branch }}
         
     - name: Set PR output
