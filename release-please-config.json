@@ -3,7 +3,8 @@
   "packages": {
     ".": {
       "release-type": "simple",
-      "pre-release-id": "dev"
+      "pre-release-id": "dev",
+      "prerelease": true
     }
   } 
 }
