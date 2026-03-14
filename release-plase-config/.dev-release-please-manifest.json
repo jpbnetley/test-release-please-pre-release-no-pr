@@ -1,8 +1,6 @@
 {
   ".": "0.0.0",
-  "release-type": "simple",
   "prerelease": true,
   "versioning": "prerelease",
   "prerelease-type": "dev"
-      
 }
