@@ -6,6 +6,11 @@ inputs:
     description: 'GitHub token for authentication'
     required: true
 
+  target-branch:
+    description: 'The branch to target for the release PR (default: main)'
+    required: false
+    default: main
+
 outputs:
   pr-number:
     description: 'Release PR number'
@@ -23,6 +28,7 @@ runs:
       with:
         token: ${{ inputs.GITHUB_TOKEN }}
         config-file: .release-please-config.json
+        target-branch: ${{ inputs.target-branch }}
         
     - name: Set PR output
       id: set-pr
