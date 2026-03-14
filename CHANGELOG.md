@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.3](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/compare/v1.0.2...v1.0.3) (2026-03-14)
+
+
+### Bug Fixes
+
+* change target branch to input ([#19](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/issues/19)) ([ff27a65](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/commit/ff27a65e1e0688bc92f1c2cb76e1ca08941c89ba))
+* change target branch to main ([#18](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/issues/18)) ([be4d1a8](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/commit/be4d1a8c3450f812c38603fab98db51f07ab7e77))
+
 ## [1.0.2](https://github.com/jpbnetley/test-release-please-pre-release-no-pr/compare/v1.0.1...v1.0.2) (2026-03-14)
 
 
