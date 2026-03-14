@@ -2,6 +2,7 @@
   "release-type": "simple",
   "prerelease": true,
   "versioning": "prerelease",
+  "prerelease-type": "dev",
   "packages": {
     ".": {
       "release-type": "simple",
