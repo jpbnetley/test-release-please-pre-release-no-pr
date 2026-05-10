@@ -41,7 +41,7 @@ runs:
       shell: bash
     - name: Release please
       id: release-please
-      uses: googleapis/release-please-action@v4
+      uses: googleapis/release-please-action@v5
       with:
         token: ${{ inputs.GITHUB_TOKEN }}
         target-branch: ${{ inputs.target-branch }}
