@@ -25,7 +25,7 @@ jobs:
 
       - name: Auto-merge release PR
         id: auto-merge
-        if: steps.release-please.outputs.prs_created == 'true'
+        if: steps.release-please.outputs.prs-created == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}

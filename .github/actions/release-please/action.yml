@@ -15,7 +15,7 @@ outputs:
   pr-number:
     description: 'Release PR number'
     value: ${{ steps.set-pr.outputs.pr-number }}
-  prs_created:
+  prs-created:
     description: 'Whether a release PR was created'
     value: ${{ steps.set-pr-created.outputs.prs_created }}
 
@@ -32,7 +32,8 @@ runs:
       run: |
         if [[ "${{ inputs.target-branch }}" == "dev" ]]; then
           echo "config-file=release-plase-config/dev-release-please-config.json" >> "$GITHUB_OUTPUT"
-          echo "manifest-file=release-plase-config/.dev-release-please-manifest.json" >> "$GITHUB_OUTPUT"
+          # echo "manifest-file=release-plase-config/.dev-release-please-manifest.json" >> "$GITHUB_OUTPUT"
+          echo "manifest-file=release-plase-config/.release-please-manifest.json" >> "$GITHUB_OUTPUT"
         else
           echo "config-file=release-plase-config/release-please-config.json" >> "$GITHUB_OUTPUT"
           echo "manifest-file=release-plase-config/.release-please-manifest.json" >> "$GITHUB_OUTPUT"
